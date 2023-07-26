@@ -221,4 +221,38 @@ header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
 }
 .about-project-title .text-container .text-container-paragraphs .text-container-paragraph:nth-child(2) {
   width: 48.375rem;
+}
+
+.slider.swiper {
+  width: 100%;
+  height: 47.25rem;
+  border-radius: 1.875rem;
+  margin-bottom: 4.563rem;
+}
+.slider.swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(255, 255, 255);
+}
+.slider.swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider.swiper .swiper-button-prev,
+.slider.swiper .swiper-button-next {
+  width: 5.625rem;
+  height: 5.625rem;
+  background-color: rgb(91, 173, 248);
+  border-radius: 6.25rem;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+  font-weight: 700;
+}
+.slider.swiper .swiper-button-prev:hover,
+.slider.swiper .swiper-button-next:hover {
+  background-color: rgb(65, 138, 205);
 }/*# sourceMappingURL=global.css.map */

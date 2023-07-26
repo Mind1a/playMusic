@@ -25,3 +25,39 @@
     }
   }
 }
+
+.slider {
+  &.swiper {
+    width: 100%;
+    height: 47.25rem;
+    border-radius: 1.875rem;
+    margin-bottom: 4.563rem;
+
+    .swiper-slide {
+      @include display_flex();
+      text-align: center;
+      background: $whiteColor;
+
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 5.625rem;
+      height: 5.625rem;
+      background-color: $blueColor;
+      border-radius: 6.25rem;
+      color: $whiteColor;
+      transition: all 0.3s ease-out;
+      font-weight: 700;
+
+      &:hover {
+        background-color: $darkBlueColor;
+      }
+    }
+  }
+}
