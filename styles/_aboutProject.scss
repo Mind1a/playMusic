@@ -1,0 +1,27 @@
+.about-project-title {
+  margin: 4.563rem 3.063rem;
+
+  .text-container {
+    .text-container-paragraphs {
+      @include display_flex();
+      margin-top: 2.563rem;
+      gap: 3.938rem;
+
+      .text-container-paragraph {
+        width: 48.938rem;
+        height: 14.688rem;
+        font-family: FiraGO;
+        font-size: 1.563rem;
+        font-weight: 300;
+        line-height: 1.875rem;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $blackColor;
+
+        &:nth-child(2) {
+          width: 48.375rem;
+        }
+      }
+    }
+  }
+}
