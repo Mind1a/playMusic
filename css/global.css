@@ -248,9 +248,22 @@ header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
   height: 5.625rem;
   background-color: rgb(91, 173, 248);
   border-radius: 6.25rem;
-  color: rgb(255, 255, 255);
   transition: all 0.3s ease-out;
   font-weight: 700;
+}
+.slider.swiper .swiper-button-prev::after,
+.slider.swiper .swiper-button-next::after {
+  position: absolute;
+  font-size: 2.25rem;
+  color: rgb(255, 255, 255);
+}
+.slider.swiper .swiper-button-prev.swiper-button-prev::after,
+.slider.swiper .swiper-button-next.swiper-button-prev::after {
+  left: 2.031rem;
+}
+.slider.swiper .swiper-button-prev.swiper-button-next::after,
+.slider.swiper .swiper-button-next.swiper-button-next::after {
+  right: 2.031rem;
 }
 .slider.swiper .swiper-button-prev:hover,
 .slider.swiper .swiper-button-next:hover {
