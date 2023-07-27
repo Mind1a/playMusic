@@ -51,9 +51,22 @@
       height: 5.625rem;
       background-color: $blueColor;
       border-radius: 6.25rem;
-      color: $whiteColor;
       transition: all 0.3s ease-out;
       font-weight: 700;
+
+      &::after {
+        position: absolute;
+        font-size: 2.25rem;
+        color: $whiteColor;
+      }
+
+      &.swiper-button-prev::after {
+        left: 2.031rem;
+      }
+
+      &.swiper-button-next::after {
+        right: 2.031rem;
+      }
 
       &:hover {
         background-color: $darkBlueColor;
