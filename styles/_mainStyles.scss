@@ -1,0 +1,18 @@
+body {
+  @include display_flex();
+  flex-direction: column;
+
+  section {
+    width: 101.25rem;
+
+    h2 {
+      font-size: 2.813rem;
+      font-family: FiraGO;
+      font-weight: 700;
+      line-height: 3.375rem;
+      letter-spacing: 0em;
+      text-align: left;
+      color: $blueColor;
+    }
+  }
+}

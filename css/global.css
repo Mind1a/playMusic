@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body section {
+  width: 101.25rem;
+}
+body section h2 {
+  font-size: 2.813rem;
+  font-family: FiraGO;
+  font-weight: 700;
+  line-height: 3.375rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(91, 173, 248);
+}
+
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(91, 173, 248);
+  width: 114.375rem;
+  height: 7.813rem;
+  margin: 1.875rem 2.75rem;
+  border-radius: 6.25rem;
+  padding: 0.625rem 6.313rem;
+}
+header .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu ul li {
+  list-style: none;
+  margin-right: 2.813rem;
+}
+header .menu ul li .menu-link {
+  width: 18.813rem;
+  height: 3.75rem;
+  padding: 0.938rem 2.188rem;
+  border-radius: 1.25rem;
+  gap: 0.625rem;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 1.563rem;
+  line-height: 1.875rem;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
+  background-color: rgb(65, 138, 205);
+}
+
+.about-project-title {
+  margin: 4.563rem 3.063rem;
+}
+.about-project-title .text-container .text-container-paragraphs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.563rem;
+  gap: 3.938rem;
+}
+.about-project-title .text-container .text-container-paragraphs .text-container-paragraph {
+  width: 48.938rem;
+  height: 14.688rem;
+  font-family: FiraGO;
+  font-size: 1.563rem;
+  font-weight: 300;
+  line-height: 1.875rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+.about-project-title .text-container .text-container-paragraphs .text-container-paragraph:nth-child(2) {
+  width: 48.375rem;
+}
+
+.slider.swiper {
+  width: 100%;
+  height: 47.25rem;
+  border-radius: 1.875rem;
+  margin-bottom: 4.563rem;
+}
+.slider.swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(255, 255, 255);
+}
+.slider.swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider.swiper .swiper-button-prev,
+.slider.swiper .swiper-button-next {
+  width: 5.625rem;
+  height: 5.625rem;
+  background-color: rgb(91, 173, 248);
+  border-radius: 6.25rem;
+  transition: all 0.3s ease-out;
+  font-weight: 700;
+}
+.slider.swiper .swiper-button-prev::after,
+.slider.swiper .swiper-button-next::after {
+  position: absolute;
+  font-size: 2.25rem;
+  color: rgb(255, 255, 255);
+}
+.slider.swiper .swiper-button-prev.swiper-button-prev::after,
+.slider.swiper .swiper-button-next.swiper-button-prev::after {
+  left: 2.031rem;
+}
+.slider.swiper .swiper-button-prev.swiper-button-next::after,
+.slider.swiper .swiper-button-next.swiper-button-next::after {
+  right: 2.031rem;
+}
+.slider.swiper .swiper-button-prev:hover,
+.slider.swiper .swiper-button-next:hover {
+  background-color: rgb(65, 138, 205);
+}/*# sourceMappingURL=global.css.map */

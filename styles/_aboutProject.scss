@@ -1,0 +1,76 @@
+.about-project-title {
+  margin: 4.563rem 3.063rem;
+
+  .text-container {
+    .text-container-paragraphs {
+      @include display_flex();
+      margin-top: 2.563rem;
+      gap: 3.938rem;
+
+      .text-container-paragraph {
+        width: 48.938rem;
+        height: 14.688rem;
+        font-family: FiraGO;
+        font-size: 1.563rem;
+        font-weight: 300;
+        line-height: 1.875rem;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $blackColor;
+
+        &:nth-child(2) {
+          width: 48.375rem;
+        }
+      }
+    }
+  }
+}
+
+.slider {
+  &.swiper {
+    width: 100%;
+    height: 47.25rem;
+    border-radius: 1.875rem;
+    margin-bottom: 4.563rem;
+
+    .swiper-slide {
+      @include display_flex();
+      text-align: center;
+      background: $whiteColor;
+
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 5.625rem;
+      height: 5.625rem;
+      background-color: $blueColor;
+      border-radius: 6.25rem;
+      transition: all 0.3s ease-out;
+      font-weight: 700;
+
+      &::after {
+        position: absolute;
+        font-size: 2.25rem;
+        color: $whiteColor;
+      }
+
+      &.swiper-button-prev::after {
+        left: 2.031rem;
+      }
+
+      &.swiper-button-next::after {
+        right: 2.031rem;
+      }
+
+      &:hover {
+        background-color: $darkBlueColor;
+      }
+    }
+  }
+}
