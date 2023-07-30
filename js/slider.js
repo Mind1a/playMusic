@@ -1,4 +1,4 @@
-import sliderImagesArray from "./data.js";
+import { sliderImagesArray } from "./data.js";
 
 // Generates images
 
