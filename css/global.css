@@ -142,6 +142,30 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "FiraGO";
+  src: url("../fonts/FiraGO-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FiraGO";
+  src: url("../fonts/FiraGO-Regular.ttf") format("truetype");
+  font-weight: 350;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FiraGO";
+  src: url("../fonts/FiraGO-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FiraGO";
+  src: url("../fonts/FiraGO-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 body {
   display: flex;
   justify-content: center;
@@ -158,7 +182,7 @@ body section h2 {
   line-height: 3.375rem;
   letter-spacing: 0em;
   text-align: left;
-  color: rgb(91, 173, 248);
+  color: rgb(65, 138, 205);
 }
 
 header .menu {
@@ -188,6 +212,7 @@ header .menu ul li .menu-link {
   border-radius: 1.25rem;
   gap: 0.625rem;
   color: rgb(255, 255, 255);
+  font-family: firaGO;
   font-weight: 500;
   font-size: 1.563rem;
   line-height: 1.875rem;
@@ -268,4 +293,51 @@ header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
 .slider.swiper .swiper-button-prev:hover,
 .slider.swiper .swiper-button-next:hover {
   background-color: rgb(65, 138, 205);
+}
+
+.project-team {
+  margin-bottom: 4.188rem;
+}
+.project-team h2 {
+  margin-bottom: 2.75rem;
+}
+.project-team .project-team-wrapper {
+  width: 61.198rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 4.375rem;
+       column-gap: 4.375rem;
+  row-gap: 3.5rem;
+}
+.project-team .project-team-wrapper .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  flex-direction: column;
+  width: 30.813rem;
+  height: 11.875rem;
+  border: 0.25rem solid rgb(91, 173, 248);
+  border-radius: 0.938rem;
+  padding: 1.438rem 1.75rem;
+  color: rgb(0, 0, 0);
+  font-family: FiraGO;
+}
+.project-team .project-team-wrapper .card:hover {
+  cursor: pointer;
+}
+.project-team .project-team-wrapper .card .card-header h3 {
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+.project-team .project-team-wrapper .card .card-header p {
+  font-weight: 350;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.project-team .project-team-wrapper .card .email {
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }/*# sourceMappingURL=global.css.map */
