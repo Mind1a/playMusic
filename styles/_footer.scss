@@ -1,0 +1,92 @@
+footer {
+  @include display_flex();
+  flex-direction: column;
+  width: 100%;
+
+  .footer-images {
+    @include display_flex(space-between);
+    width: 101.25rem;
+    margin-top: 0.438rem;
+    margin-bottom: -1.563rem;
+    z-index: 100;
+    gap: 4.375rem;
+
+    .notes {
+      position: relative;
+      width: 100%;
+      height: 27rem;
+
+      $note-positions: (
+        (1.875rem, 0),
+        (15rem, 0.75rem),
+        (18.75rem, 10rem),
+        (5rem, 16.875rem),
+        (16.875rem, 21.125rem),
+        (7.5rem, 28.5rem)
+      );
+
+      .note {
+        position: absolute;
+
+        @for $i from 1 through 6 {
+          $position: nth($note-positions, $i);
+          $top: nth($position, 1);
+          $left: nth($position, 2);
+
+          &:nth-child(#{$i}) {
+            top: $top;
+            left: $left;
+          }
+        }
+      }
+    }
+  }
+
+  .download {
+    @include display_flex(space-evenly);
+    flex-direction: column;
+    width: 100%;
+    height: 20.875rem;
+    background-color: $darkBlueColor;
+    font-family: firaGO;
+    font-weight: 500;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: $whiteColor;
+
+    .download-btns {
+      @include display_flex();
+      gap: 4.375rem;
+
+      .download-btn {
+        width: 16.875rem;
+        height: 4.625rem;
+        border: none;
+        border-radius: 1.25rem;
+        padding: 1.563rem 2.188rem;
+        font-family: firaGO;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        background-color: $whiteColor;
+        color: $lightBlackColor;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+          background-color: $blueColor;
+        }
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+
+      a {
+        color: $whiteColor;
+        font-weight: 700;
+      }
+    }
+  }
+}
