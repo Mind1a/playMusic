@@ -28,6 +28,7 @@ header {
           line-height: 1.875rem;
           text-align: center;
           transition: all 0.3s ease-out;
+          cursor: pointer;
 
           &:hover,
           &.active {

@@ -1,9 +1,15 @@
 body {
-  @include display_flex();
+  @include display_flex(space-between);
   flex-direction: column;
+  min-height: 100vh;
 
-  section {
-    width: 101.25rem;
+  .main {
+    @include display_flex();
+    flex-direction: column;
+
+    section {
+      width: 101.25rem;
+    }
 
     h2 {
       font-size: 2.813rem;
@@ -13,6 +19,10 @@ body {
       letter-spacing: 0em;
       text-align: left;
       color: $darkBlueColor;
+    }
+
+    .hide {
+      display: none;
     }
   }
 }
