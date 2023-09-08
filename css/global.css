@@ -200,6 +200,29 @@ body .main h2 {
 body .main .hide {
   display: none;
 }
+body .main .music-notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 114.375rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: -10;
+}
+body .main .music-notes .note {
+  position: absolute;
+  font-size: 5rem;
+  color: rgb(91, 173, 248);
+  animation: noteMove 1s ease-in-out infinite;
+}
 
 header .menu {
   display: flex;
@@ -461,4 +484,13 @@ footer .download p {
 footer .download p a {
   color: rgb(255, 255, 255);
   font-weight: 700;
+}
+
+@keyframes noteMove {
+  0%, 100% {
+    transform: translate3d(0, -10px, 0);
+  }
+  50% {
+    transform: translate3d(0, 10px, 0);
+  }
 }/*# sourceMappingURL=global.css.map */
