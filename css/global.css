@@ -224,6 +224,21 @@ body .main .music-notes .note {
   animation: noteMove 1s ease-in-out infinite;
 }
 
+@media (max-width: 120rem) {
+  body .main section {
+    width: 61.875rem;
+  }
+  body .main h2 {
+    font-size: 2.1875rem;
+    line-height: 2.62rem;
+  }
+  body .main .music-notes {
+    max-width: 74.375rem;
+  }
+  body .main .music-notes .note {
+    font-size: 4rem;
+  }
+}
 header .menu {
   display: flex;
   justify-content: space-between;
@@ -263,6 +278,23 @@ header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
   background-color: rgb(65, 138, 205);
 }
 
+@media (max-width: 120rem) {
+  header .menu {
+    margin: 1rem 2.75rem;
+    width: 74.375rem;
+    height: 6.25rem;
+  }
+  header .menu .logo img {
+    width: 5.375rem;
+    height: 5.5rem;
+  }
+  header .menu ul li .menu-link {
+    width: 13.0625rem;
+    height: 3rem;
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
 .about-project-title {
   margin: 2.688rem 3.063rem;
 }
@@ -382,6 +414,74 @@ header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
   line-height: 1.5rem;
 }
 
+@media (max-width: 120rem) {
+  .about-project-title {
+    margin: 2.125rem 3.063rem;
+  }
+  .about-project-title .text-container .text-container-paragraphs {
+    margin-top: 1.25rem;
+    gap: 2.938rem;
+  }
+  .about-project-title .text-container .text-container-paragraphs .text-container-paragraph {
+    width: 29.375rem;
+    height: 9rem;
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+  .about-project-title .text-container .text-container-paragraphs .text-container-paragraph:nth-child(2) {
+    width: 29.375rem;
+  }
+  .slider.swiper {
+    height: 28.5625rem;
+    margin-bottom: 3.44rem;
+  }
+  .slider.swiper .swiper-button-prev,
+  .slider.swiper .swiper-button-next {
+    width: 2.8125rem;
+    height: 2.8125rem;
+  }
+  .slider.swiper .swiper-button-prev::after,
+  .slider.swiper .swiper-button-next::after {
+    font-size: 0.875rem;
+  }
+  .slider.swiper .swiper-button-prev.swiper-button-prev::after, .slider.swiper .swiper-button-prev.swiper-button-next::after,
+  .slider.swiper .swiper-button-next.swiper-button-prev::after,
+  .slider.swiper .swiper-button-next.swiper-button-next::after {
+    left: auto;
+    right: auto;
+  }
+  .project-team {
+    margin-bottom: 3.35rem;
+  }
+  .project-team h2 {
+    margin-bottom: 1.875rem;
+  }
+  .project-team .project-team-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 3.2rem;
+         column-gap: 3.2rem;
+    row-gap: 1.563rem;
+  }
+  .project-team .project-team-wrapper .card {
+    width: 29.3125rem;
+    height: 8.3125rem;
+    border: 0.125rem solid rgb(91, 173, 248);
+    padding: 0.9rem 1.1rem;
+  }
+  .project-team .project-team-wrapper .card .card-header h3 {
+    font-size: 1.4375rem;
+    line-height: 1.725rem;
+    margin-bottom: 0.75rem;
+  }
+  .project-team .project-team-wrapper .card .card-header p {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+  .project-team .project-team-wrapper .card .email {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
 .video-container .tutotial-heading {
   margin-top: 2.688rem;
 }
@@ -389,6 +489,16 @@ header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
   margin: 2.813rem 0;
 }
 
+@media (max-width: 120rem) {
+  .video-container .tutotial-heading {
+    margin-top: 2.125rem;
+  }
+  .video-container video {
+    margin: 2rem 0;
+    width: 980px;
+    height: 390px;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
@@ -452,11 +562,22 @@ footer .download {
   line-height: 2.25rem;
   color: rgb(255, 255, 255);
 }
+footer .download .windows {
+  text-align: center;
+}
+footer .download .windows h3 {
+  line-height: 52px;
+}
+footer .download .windows h3 span {
+  display: block;
+  font-weight: 500;
+}
 footer .download .download-btns {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4.375rem;
+  margin-top: 2rem;
 }
 footer .download .download-btns .download-btn {
   width: 16.875rem;
@@ -486,6 +607,67 @@ footer .download p a {
   font-weight: 700;
 }
 
+@media (max-width: 120rem) {
+  footer .footer-images {
+    width: 74.375rem;
+    margin-top: 0.438rem;
+    gap: 2.5625rem;
+  }
+  footer .footer-images > img {
+    width: 20.79rem;
+  }
+  footer .footer-images .notes {
+    height: 20.79rem;
+  }
+  footer .footer-images .notes .note {
+    position: absolute;
+  }
+  footer .footer-images .notes .note:nth-child(1) {
+    top: 1rem;
+    left: 0;
+  }
+  footer .footer-images .notes .note:nth-child(2) {
+    top: 10.5rem;
+    left: 0.5rem;
+  }
+  footer .footer-images .notes .note:nth-child(3) {
+    top: 13.19rem;
+    left: 8.125rem;
+  }
+  footer .footer-images .notes .note:nth-child(4) {
+    top: 3.813rem;
+    left: 14.25rem;
+  }
+  footer .footer-images .notes .note:nth-child(5) {
+    top: 12.44rem;
+    left: 18.06rem;
+  }
+  footer .footer-images .notes .note:nth-child(6) {
+    top: 5.63rem;
+    left: 24.44rem;
+  }
+  footer .download {
+    height: 14rem;
+    font-size: 1.5625rem;
+    line-height: 2.5rem;
+    font-weight: 350;
+  }
+  footer .download .download-btns {
+    gap: 2.375rem;
+    margin-top: 1rem;
+  }
+  footer .download .download-btns .download-btn {
+    width: 13.0625rem;
+    height: 3rem;
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+    padding: 0.625rem;
+  }
+  footer .download p {
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+  }
+}
 @keyframes noteMove {
   0%, 100% {
     transform: translate3d(0, -10px, 0);

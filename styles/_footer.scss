@@ -54,9 +54,21 @@ footer {
     line-height: 2.25rem;
     color: $whiteColor;
 
+    .windows {
+      text-align: center;
+      h3 {
+        line-height: 52px;
+        span {
+          display: block;
+          font-weight: 500;
+        }
+      }
+    }
+
     .download-btns {
       @include display_flex();
       gap: 4.375rem;
+      margin-top: 2rem;
 
       .download-btn {
         width: 16.875rem;
@@ -86,6 +98,71 @@ footer {
       a {
         color: $whiteColor;
         font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (max-width: 120rem) {
+  footer {
+    .footer-images {
+      width: 74.375rem;
+      margin-top: 0.438rem;
+      gap: 2.5625rem;
+      & > img {
+        width: 20.79rem;
+      }
+
+      .notes {
+        height: 20.79rem;
+
+        $note-positions: (
+          (1rem, 0),
+          (10.5rem, 0.5rem),
+          (13.19rem, 8.125rem),
+          (3.813rem, 14.25rem),
+          (12.44rem, 18.06rem),
+          (5.63rem, 24.44rem)
+        );
+
+        .note {
+          position: absolute;
+
+          @for $i from 1 through 6 {
+            $position: nth($note-positions, $i);
+            $top: nth($position, 1);
+            $left: nth($position, 2);
+
+            &:nth-child(#{$i}) {
+              top: $top;
+              left: $left;
+            }
+          }
+        }
+      }
+    }
+
+    .download {
+      height: 14rem;
+      font-size: 1.5625rem;
+      line-height: 2.5rem;
+      font-weight: 350;
+
+      .download-btns {
+        gap: 2.375rem;
+        margin-top: 1rem;
+
+        .download-btn {
+          width: 13.0625rem;
+          height: 3rem;
+          font-size: 0.9375rem;
+          line-height: 1.125rem;
+          padding: 0.625rem;
+        }
+      }
+      p {
+        font-size: 0.9375rem;
+        line-height: 1.125rem;
       }
     }
   }
