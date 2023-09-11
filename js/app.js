@@ -16,3 +16,10 @@ function changePage() {
   drawNotes();
   // video.play();
 }
+
+// Updates the footer text based on the user's operating system.
+if (navigator.userAgent.indexOf("Windows") === -1) {
+  const downloadSection = document.querySelector(".windows");
+
+  downloadSection.innerHTML = `<h3>აპლიკაციის ჩამოტვირთვა შესაძლებელია<span> მხოლოდ Windows კომპიუტერებზე<span><h3>`;
+}

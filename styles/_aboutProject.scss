@@ -125,3 +125,86 @@
     }
   }
 }
+
+@media (max-width: 120rem) {
+  .about-project-title {
+    margin: 2.125rem 3.063rem;
+
+    .text-container {
+      .text-container-paragraphs {
+        margin-top: 1.25rem;
+        gap: 2.938rem;
+
+        .text-container-paragraph {
+          width: 29.375rem;
+          height: 9rem;
+          font-size: 0.9375rem;
+          line-height: 1.125rem;
+
+          &:nth-child(2) {
+            width: 29.375rem;
+          }
+        }
+      }
+    }
+  }
+
+  .slider {
+    &.swiper {
+      height: 28.5625rem;
+      margin-bottom: 3.44rem;
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        width: 2.8125rem;
+        height: 2.8125rem;
+
+        &::after {
+          font-size: 0.875rem;
+        }
+
+        &.swiper-button-prev::after,
+        &.swiper-button-next::after {
+          left: auto;
+          right: auto;
+        }
+      }
+    }
+  }
+  .project-team {
+    margin-bottom: 3.35rem;
+
+    h2 {
+      margin-bottom: 1.875rem;
+    }
+
+    .project-team-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 3.2rem;
+      row-gap: 1.563rem;
+
+      .card {
+        width: 29.3125rem;
+        height: 8.3125rem;
+        border: 0.125rem solid $blueColor;
+        padding: 0.9rem 1.1rem;
+
+        .card-header {
+          h3 {
+            font-size: 1.4375rem;
+            line-height: 1.725rem;
+            margin-bottom: 0.75rem;
+          }
+          p {
+            font-size: 0.9375rem;
+            line-height: 1.125rem;
+          }
+        }
+        .email {
+          font-size: 0.9375rem;
+          line-height: 1.125rem;
+        }
+      }
+    }
+  }
+}
