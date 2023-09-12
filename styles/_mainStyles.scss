@@ -1,9 +1,15 @@
 body {
-  @include display_flex();
+  @include display_flex(space-between);
   flex-direction: column;
+  min-height: 100vh;
 
-  section {
-    width: 101.25rem;
+  .main {
+    @include display_flex();
+    flex-direction: column;
+
+    section {
+      width: 101.25rem;
+    }
 
     h2 {
       font-size: 2.813rem;
@@ -13,6 +19,55 @@ body {
       letter-spacing: 0em;
       text-align: left;
       color: $darkBlueColor;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .music-notes {
+      @include display_flex();
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 114.375rem;
+      height: fit-content;
+      z-index: -10;
+
+      .note {
+        position: absolute;
+        font-size: 5rem;
+        color: $blueColor;
+        animation: noteMove 1s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@media (max-width: 120rem) {
+  body {
+    .main {
+      section {
+        width: 61.875rem;
+      }
+
+      h2 {
+        font-size: 2.1875rem;
+        line-height: 2.62rem;
+      }
+
+      .music-notes {
+        max-width: 74.375rem;
+
+        .note {
+          font-size: 4rem;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,22 @@
+.video-container {
+  .tutotial-heading {
+    margin-top: 2.688rem;
+  }
+
+  video {
+    margin: 2.813rem 0;
+  }
+}
+
+@media (max-width: 120rem) {
+  .video-container {
+    .tutotial-heading {
+      margin-top: 2.125rem;
+    }
+    video {
+      margin: 2rem 0;
+      width: 980px;
+      height: 390px;
+    }
+  }
+}
