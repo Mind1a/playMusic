@@ -3,3 +3,19 @@
   justify-content: $x;
   align-items: $y;
 }
+
+@mixin card($width, $height, $border-size, $padding) {
+  flex-direction: column;
+  width: $width;
+  height: $height;
+  border: $border-size solid $blueColor;
+  border-radius: 0.938rem;
+  padding: $padding;
+  font-family: FiraGO;
+  color: $blackColor;
+}
+
+@mixin card_font_size($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}

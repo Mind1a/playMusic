@@ -239,6 +239,21 @@ body .main .music-notes .note {
     font-size: 4rem;
   }
 }
+@media (max-width: 80rem) {
+  body .main section {
+    width: 41.75rem;
+  }
+  body .main h2 {
+    font-size: 1.5625rem;
+    line-height: 1.875rem;
+  }
+  body .main .music-notes {
+    max-width: 47rem;
+  }
+  body .main .music-notes .note {
+    font-size: 2rem;
+  }
+}
 header .menu {
   display: flex;
   justify-content: space-between;
@@ -293,6 +308,29 @@ header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
     height: 3rem;
     font-size: 0.9375rem;
     line-height: 1.125rem;
+  }
+}
+@media (max-width: 80rem) {
+  header .menu {
+    width: 45.5rem;
+    height: 3.5rem;
+    margin: 1.1875rem 0;
+    padding: 0.5rem 1.875rem;
+  }
+  header .menu .logo img {
+    width: 2.5rem;
+    height: 2.56rem;
+  }
+  header .menu ul li {
+    margin-right: 0.5rem;
+  }
+  header .menu ul li .menu-link {
+    width: 10.3125rem;
+    height: 1.9375rem;
+    padding: 0.5rem 1.125rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.05rem;
   }
 }
 .about-project-title {
@@ -391,27 +429,27 @@ header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
   border: 0.25rem solid rgb(91, 173, 248);
   border-radius: 0.938rem;
   padding: 1.438rem 1.75rem;
-  color: rgb(0, 0, 0);
   font-family: FiraGO;
+  color: rgb(0, 0, 0);
 }
 .project-team .project-team-wrapper .card:hover {
   cursor: pointer;
 }
 .project-team .project-team-wrapper .card .card-header h3 {
-  font-weight: 500;
   font-size: 1.875rem;
   line-height: 2.25rem;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 .project-team .project-team-wrapper .card .card-header p {
-  font-weight: 350;
   font-size: 1.25rem;
   line-height: 1.5rem;
+  font-weight: 350;
 }
 .project-team .project-team-wrapper .card .email {
-  font-weight: 300;
   font-size: 1.25rem;
   line-height: 1.5rem;
+  font-weight: 300;
 }
 
 @media (max-width: 120rem) {
@@ -463,10 +501,14 @@ header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
     row-gap: 1.563rem;
   }
   .project-team .project-team-wrapper .card {
+    flex-direction: column;
     width: 29.3125rem;
     height: 8.3125rem;
     border: 0.125rem solid rgb(91, 173, 248);
+    border-radius: 0.938rem;
     padding: 0.9rem 1.1rem;
+    font-family: FiraGO;
+    color: rgb(0, 0, 0);
   }
   .project-team .project-team-wrapper .card .card-header h3 {
     font-size: 1.4375rem;
@@ -482,6 +524,66 @@ header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
     line-height: 1.125rem;
   }
 }
+@media (max-width: 80rem) {
+  .about-project-title {
+    margin: 0.5625rem 3.063rem;
+  }
+  .about-project-title .text-container .text-container-paragraphs {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 221px;
+    margin-top: 1.875rem;
+    gap: 0;
+  }
+  .about-project-title .text-container .text-container-paragraphs .text-container-paragraph {
+    width: 100%;
+    height: auto;
+    font-size: 0.875rem;
+    line-height: 1.05rem;
+  }
+  .about-project-title .text-container .text-container-paragraphs .text-container-paragraph:nth-child(2) {
+    width: 100%;
+    margin-top: 0;
+  }
+  .slider.swiper {
+    height: 19.9494rem;
+    margin-top: 1.8125rem;
+    margin-bottom: 3.25rem;
+  }
+  .project-team h2 {
+    margin-bottom: 3.125rem;
+  }
+  .project-team .project-team-wrapper {
+    width: 41.75rem;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+    row-gap: 1.875rem;
+  }
+  .project-team .project-team-wrapper .card {
+    flex-direction: column;
+    width: 20.25rem;
+    height: 8.125rem;
+    border: 0.1875rem solid rgb(91, 173, 248);
+    border-radius: 0.938rem;
+    padding: 0.5625rem 1rem;
+    font-family: FiraGO;
+    color: rgb(0, 0, 0);
+  }
+  .project-team .project-team-wrapper .card .card-header h3 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.875rem;
+  }
+  .project-team .project-team-wrapper .card .card-header p {
+    font-size: 0.875rem;
+    line-height: 1.05rem;
+    font-weight: 400;
+  }
+  .project-team .project-team-wrapper .card .email {
+    font-size: 0.875rem;
+    line-height: 1.05rem;
+  }
+}
 .video-container .tutotial-heading {
   margin-top: 2.688rem;
 }
@@ -495,8 +597,18 @@ header .menu ul li .menu-link:hover, header .menu ul li .menu-link.active {
   }
   .video-container video {
     margin: 2rem 0;
-    width: 980px;
-    height: 390px;
+    width: 61.25rem;
+    height: 24.375rem;
+  }
+}
+@media (max-width: 80rem) {
+  .video-container .tutotial-heading {
+    margin-top: 0.5625rem;
+  }
+  .video-container video {
+    margin: 1.75rem 0;
+    width: 41.75rem;
+    height: 18.8125rem;
   }
 }
 footer {
@@ -548,6 +660,9 @@ footer .footer-images .notes .note:nth-child(6) {
   top: 7.5rem;
   left: 28.5rem;
 }
+footer .footer-images .notes .note.hide {
+  display: none;
+}
 footer .download {
   display: flex;
   justify-content: space-evenly;
@@ -566,7 +681,7 @@ footer .download .windows {
   text-align: center;
 }
 footer .download .windows h3 {
-  line-height: 52px;
+  line-height: 3.25rem;
 }
 footer .download .windows h3 span {
   display: block;
@@ -666,6 +781,101 @@ footer .download p a {
   footer .download p {
     font-size: 0.9375rem;
     line-height: 1.125rem;
+  }
+}
+@media (max-width: 80rem) {
+  footer .footer-images {
+    width: 45.5rem;
+    margin-top: 2.8125rem;
+    gap: 1rem;
+    margin-bottom: -0.625rem;
+  }
+  footer .footer-images > img {
+    width: 12.5rem;
+  }
+  footer .footer-images .notes {
+    height: 11.147rem;
+  }
+  footer .footer-images .notes .note {
+    position: absolute;
+    height: 30px;
+  }
+  footer .footer-images .notes .note.key {
+    height: 66.41px;
+  }
+  footer .footer-images .notes .note.hide {
+    display: block;
+  }
+  footer .footer-images .notes .note.tab {
+    height: initial;
+  }
+  footer .footer-images .notes .note:nth-child(1) {
+    top: 2.5rem;
+    left: 0;
+  }
+  footer .footer-images .notes .note:nth-child(2) {
+    top: 6.5rem;
+    left: 8.06rem;
+  }
+  footer .footer-images .notes .note:nth-child(3) {
+    top: 7.06rem;
+    left: 1.75rem;
+  }
+  footer .footer-images .notes .note:nth-child(4) {
+    top: 2.125rem;
+    left: 10rem;
+  }
+  footer .footer-images .notes .note:nth-child(5) {
+    top: 6.25rem;
+    left: 15rem;
+  }
+  footer .footer-images .notes .note:nth-child(6) {
+    top: 2.625rem;
+    left: 3.5rem;
+  }
+  footer .footer-images .notes .note:nth-child(7) {
+    top: 8.5rem;
+    left: 12rem;
+  }
+  footer .footer-images .notes .note:nth-child(8) {
+    top: 1.81rem;
+    left: 15rem;
+  }
+  footer .footer-images .notes .note:nth-child(9) {
+    top: 0rem;
+    left: -0.19rem;
+  }
+  footer .footer-images .notes .note:nth-child(10) {
+    top: -2.94rem;
+    left: 6.81rem;
+  }
+  footer .footer-images .notes .note:nth-child(11) {
+    top: -3.875rem;
+    left: 20.31rem;
+  }
+  footer .download {
+    height: 9.6875rem;
+    font-size: 1.125rem;
+    line-height: 1.35rem;
+  }
+  footer .download .windows h3 {
+    line-height: 1.35rem;
+  }
+  footer .download .download-btns {
+    gap: 1.5rem;
+    margin-top: 0.2rem;
+  }
+  footer .download .download-btns .download-btn {
+    width: 11rem;
+    height: 2.5rem;
+    font-size: 0.875rem;
+    line-height: 1.05rem;
+    padding: 0.2rem;
+    margin-top: 0.625rem;
+  }
+  footer .download p {
+    font-size: 0.875rem;
+    line-height: 1.055rem;
   }
 }
 @keyframes noteMove {

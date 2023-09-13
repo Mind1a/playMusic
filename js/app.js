@@ -21,5 +21,5 @@ function changePage() {
 if (navigator.userAgent.indexOf("Windows") === -1) {
   const downloadSection = document.querySelector(".windows");
 
-  downloadSection.innerHTML = `<h3>აპლიკაციის ჩამოტვირთვა შესაძლებელია<span> მხოლოდ Windows კომპიუტერებზე<span><h3>`;
+  downloadSection.innerHTML = `<h3>აპლიკაციის ჩამოტვირთვა შესაძლებელია<span> მხოლოდ Windows კომპიუტერებზე</span></h3>`;
 }

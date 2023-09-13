@@ -15,8 +15,21 @@
     }
     video {
       margin: 2rem 0;
-      width: 980px;
-      height: 390px;
+      width: 61.25rem;
+      height: 24.375rem;
+    }
+  }
+}
+
+@media (max-width: 80rem) {
+  .video-container {
+    .tutotial-heading {
+      margin-top: 0.5625rem;
+    }
+    video {
+      margin: 1.75rem 0;
+      width: 41.75rem;
+      height: 18.8125rem;
     }
   }
 }

@@ -38,6 +38,10 @@ footer {
             left: $left;
           }
         }
+
+        &.hide {
+          display: none;
+        }
       }
     }
   }
@@ -57,7 +61,7 @@ footer {
     .windows {
       text-align: center;
       h3 {
-        line-height: 52px;
+        line-height: 3.25rem;
         span {
           display: block;
           font-weight: 500;
@@ -163,6 +167,96 @@ footer {
       p {
         font-size: 0.9375rem;
         line-height: 1.125rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 80rem) {
+  footer {
+    .footer-images {
+      width: 45.5rem;
+      margin-top: 2.8125rem;
+      gap: 1rem;
+      margin-bottom: -0.625rem;
+      & > img {
+        width: 12.5rem;
+      }
+
+      .notes {
+        height: 11.147rem;
+
+        $note-positions: (
+          (2.5rem, 0),
+          (6.5rem, 8.06rem),
+          (7.06rem, 1.75rem),
+          (2.125rem, 10rem),
+          (6.25rem, 15rem),
+          (2.625rem, 3.5rem),
+          (8.5rem, 12rem),
+          (1.81rem, 15rem),
+          (0rem, -0.19rem),
+          (-2.94rem, 6.81rem),
+          (-3.875rem, 20.31rem)
+        );
+
+        .note {
+          position: absolute;
+          height: 30px;
+
+          &.key {
+            height: 66.41px;
+          }
+
+          &.hide {
+            display: block;
+          }
+
+          &.tab {
+            height: initial;
+          }
+
+          @for $i from 1 through 11 {
+            $position: nth($note-positions, $i);
+            $top: nth($position, 1);
+            $left: nth($position, 2);
+
+            &:nth-child(#{$i}) {
+              top: $top;
+              left: $left;
+            }
+          }
+        }
+      }
+    }
+
+    .download {
+      height: 9.6875rem;
+      font-size: 1.125rem;
+      line-height: 1.35rem;
+
+      .windows {
+        h3 {
+          line-height: 1.35rem;
+        }
+      }
+
+      .download-btns {
+        gap: 1.5rem;
+        margin-top: 0.2rem;
+
+        .download-btn {
+          width: 11rem;
+          height: 2.5rem;
+          font-size: 0.875rem;
+          line-height: 1.05rem;
+          padding: 0.2rem;
+          margin-top: 0.625rem;
+        }
+      }
+      p {
+        font-size: 0.875rem;
+        line-height: 1.055rem;
       }
     }
   }
