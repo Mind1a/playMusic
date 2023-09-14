@@ -67,3 +67,34 @@ header {
     }
   }
 }
+
+@media (max-width: 80rem) {
+  header {
+    .menu {
+      width: 45.5rem;
+      height: 3.5rem;
+      margin: 1.1875rem 0;
+      padding: 0.5rem 1.875rem;
+
+      .logo {
+        img {
+          width: 2.5rem;
+          height: 2.56rem;
+        }
+      }
+      ul {
+        li {
+          margin-right: 0.5rem;
+          .menu-link {
+            width: 10.3125rem;
+            height: 1.9375rem;
+            padding: 0.5rem 1.125rem;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.05rem;
+          }
+        }
+      }
+    }
+  }
+}

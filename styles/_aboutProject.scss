@@ -91,14 +91,7 @@
 
     .card {
       @include display_flex(space-between, left);
-      flex-direction: column;
-      width: 30.813rem;
-      height: 11.875rem;
-      border: 0.25rem solid $blueColor;
-      border-radius: 0.938rem;
-      padding: 1.438rem 1.75rem;
-      color: $blackColor;
-      font-family: FiraGO;
+      @include card(30.813rem, 11.875rem, 0.25rem, 1.438rem 1.75rem);
 
       &:hover {
         cursor: pointer;
@@ -106,21 +99,18 @@
 
       .card-header {
         h3 {
+          @include card_font_size(1.875rem, 2.25rem);
           font-weight: 500;
-          font-size: 1.875rem;
-          line-height: 2.25rem;
           margin-bottom: 0.5rem;
         }
         p {
+          @include card_font_size(1.25rem, 1.5rem);
           font-weight: 350;
-          font-size: 1.25rem;
-          line-height: 1.5rem;
         }
       }
       .email {
+        @include card_font_size(1.25rem, 1.5rem);
         font-weight: 300;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
       }
     }
   }
@@ -184,25 +174,85 @@
       row-gap: 1.563rem;
 
       .card {
-        width: 29.3125rem;
-        height: 8.3125rem;
-        border: 0.125rem solid $blueColor;
-        padding: 0.9rem 1.1rem;
+        @include card(29.3125rem, 8.3125rem, 0.125rem, 0.9rem 1.1rem);
 
         .card-header {
           h3 {
-            font-size: 1.4375rem;
-            line-height: 1.725rem;
+            @include card_font_size(1.4375rem, 1.725rem);
             margin-bottom: 0.75rem;
           }
           p {
-            font-size: 0.9375rem;
-            line-height: 1.125rem;
+            @include card_font_size(0.9375rem, 1.125rem);
           }
         }
         .email {
-          font-size: 0.9375rem;
-          line-height: 1.125rem;
+          @include card_font_size(0.9375rem, 1.125rem);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 80rem) {
+  .about-project-title {
+    margin: 0.5625rem 3.063rem;
+
+    .text-container {
+      .text-container-paragraphs {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 221px;
+        margin-top: 1.875rem;
+        gap: 0;
+
+        .text-container-paragraph {
+          width: 100%;
+          height: auto;
+          font-size: 0.875rem;
+          line-height: 1.05rem;
+
+          &:nth-child(2) {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .slider {
+    &.swiper {
+      height: 19.9494rem;
+      margin-top: 1.8125rem;
+      margin-bottom: 3.25rem;
+    }
+  }
+
+  .project-team {
+    h2 {
+      margin-bottom: 3.125rem;
+    }
+
+    .project-team-wrapper {
+      width: 41.75rem;
+      column-gap: 1.25rem;
+      row-gap: 1.875rem;
+
+      .card {
+        @include card(20.25rem, 8.125rem, 0.1875rem, 0.5625rem 1rem);
+
+        .card-header {
+          h3 {
+            @include card_font_size(1.25rem, 1.5rem);
+            margin-bottom: 0.875rem;
+          }
+          p {
+            @include card_font_size(0.875rem, 1.05rem);
+            font-weight: 400;
+          }
+        }
+        .email {
+          @include card_font_size(0.875rem, 1.05rem);
         }
       }
     }
