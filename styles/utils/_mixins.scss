@@ -19,3 +19,9 @@
   font-size: $font-size;
   line-height: $line-height;
 }
+
+@mixin video_note_position($top: 0, $left: 0, $height: auto) {
+  top: $top;
+  left: $left;
+  height: $height;
+}

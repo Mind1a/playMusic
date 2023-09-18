@@ -94,3 +94,22 @@ body {
     }
   }
 }
+
+@media (max-width: 48rem) {
+  body {
+    .main {
+      section {
+        width: 16.875rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+        line-height: 1.2rem;
+      }
+
+      .music-notes {
+        display: none;
+      }
+    }
+  }
+}

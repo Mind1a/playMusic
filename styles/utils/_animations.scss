@@ -7,3 +7,12 @@
     transform: translate3d(0, 10px, 0);
   }
 }
+
+@keyframes showBurgerMenu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

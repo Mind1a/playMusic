@@ -7,6 +7,11 @@
     margin: 2.813rem 0;
   }
 }
+.video-notes {
+  display: none;
+  visibility: hidden;
+  height: 0;
+}
 
 @media (max-width: 120rem) {
   .video-container {
@@ -30,6 +35,40 @@
       margin: 1.75rem 0;
       width: 41.75rem;
       height: 18.8125rem;
+    }
+  }
+}
+
+@media (max-width: 48rem) {
+  .video-container {
+    .tutotial-heading {
+      margin-top: 0.125rem;
+    }
+    video {
+      margin: 0.75rem 0;
+      width: 16.875rem;
+      height: 8.7438rem;
+    }
+  }
+  .video-notes {
+    visibility: visible;
+    width: 16.875rem;
+    height: 9rem;
+
+    .note {
+      position: relative;
+      &:nth-child(1) {
+        @include video_note_position(2rem, 0.875rem);
+      }
+      &:nth-child(2) {
+        @include video_note_position(null, 4rem, 1.2rem);
+      }
+      &:nth-child(3) {
+        @include video_note_position(4rem, 7rem);
+      }
+      &:nth-child(4) {
+        @include video_note_position(0.875rem, 10rem, 1.5rem);
+      }
     }
   }
 }
